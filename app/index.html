@@ -8,11 +8,23 @@
   </head>
   <body>
     <div class="search">
-      <span>http://pokeapi.co/api/v2/</span>
-      <input type="text" placeholder="pokemon/1/">
-      <button type="submit" formmethod="get" formaction="http://pokeapi.co/api/v2/">Submit</button>
+      <span>http://pokeapi.co/api/v2/pokemon/</span>
+      <input type="text" placeholder="1/">
+      <button class="btn" type="submit" formaction="http://pokeapi.co/api/v2/pokemon/">Submit</button>
     </div>
-    <div class="container"></div>
+    <div class="container">
+
+    <script id="submit" type="text/x-handlebars-template">
+      <div class="button-div">
+        <button type="button" class="btn"><p>Submit</p></button>
+      </div>
+    </script>
+
+    <script id="loading" type="text/x-handlebars-template">
+      <div class="button-div">
+        <button type="button" class="btn"><p>Loading..</p></button>
+      </div>
+    </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
